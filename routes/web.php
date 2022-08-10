@@ -20,7 +20,7 @@ use App\Http\Controllers\UserProfileController;
 |
 */
 // Public routes
-Route::get("/",'PublicPagesControllerhome@home')->name("home");
+Route::get("/",[PublicPagesController::class,'home'])->name("home");
 Route::get("/contact",[PublicPagesController::class,'contact'])->name("contact");
 Route::get("/about",[PublicPagesController::class,'about'])->name("about");
 Route::get("/services",[PublicPagesController::class,'services'])->name("services");
